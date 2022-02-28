@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+.background{
+    height: 100%;
+    background: url(assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Alternative Responsive background image css*/
+/*
+body{
+    background-color:#646464;
+    font-family: 'montserrat', sans-serif;
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: center;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+@media only screen and (min-width: 896px) {
+    body {
+        background-color:#646464;
+        background-image: url(assets/bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        object-fit: center;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+    }
+  }
+
+  */
