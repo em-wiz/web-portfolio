@@ -192,22 +192,34 @@
 
           <!--CONTACT SECTION-->
           <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
-            <div class="w3-margin-top-2" style="font-weight: 500;">
-              <p>Name: John Doe</p>
-              <p>Adress: Street name 99, 77001 Houston, Texas</p>
-              <p>Phone number: +0123456789</p>
-              <p>E-mail: johndoe@email.com</p>
-            </div>
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT ME</h3>
+
+            <form action="mail.php" method="post">
+
+              <p><input class="w3-input" type="text" name="name" placeholder="Enter your full name"></p>
+              <p><input class="w3-input" type="email" name="email" placeholder="Enter your email"></p>
+              <p>      
+                 <textarea class="w3-input w3-border" style="resize:none" name="message" placeholder="Type your message.."></textarea>
+             </p>
+           
+             <p><button class="w3-button w3-block w3-amber" type="submit"><b>Send</b></button></p>
+            
+           </form>
+
+           <div class="w3-margin-top-2" style="font-weight: 500;">
+           
+            <p>Phone number: +2348104374190</p>
+            <p>E-mail: johndoe@email.com</p>
           </div>
 
         <!--FOOTER-->
         <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2021 - Wisdom Emmanuel</p>
+          <p>© 2022 - Wisdom Emmanuel</p>
         <!-- End footer -->
         </footer>
      
     </section>
+
     <script>
       // Function to toggle mobile navigation
       function toggleNavigation() {
