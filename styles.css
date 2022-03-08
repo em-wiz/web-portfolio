@@ -174,6 +174,10 @@ body * {
     font-size: 23px;
   }
 
+  #download-btn{
+    background: #ccc;
+  }
+
   /* scroll button*/
   .to-top {
     background: #ffbf00;
@@ -198,6 +202,81 @@ body * {
     bottom:32px;
     pointer-events: auto;
     opacity:1;
+  }
+
+  /*Animations*/
+  .balls{
+    border-radius: 50%;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .ballsb{
+    border-radius: 50%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20;
+    animation-name: bounceb;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  #black-box {
+    border-radius:0;
+    background: rgba(0, 0, 0, 0.2);
+    left: 27%;
+    animation-timing-function: cubic-bezier(0.6, 0, 0.58, 1);
+  }
+  #amber-box {
+    border-radius:0;
+    background: rgba(255, 191, 0, 0.3);
+    left: 78%;
+    animation-timing-function: cubic-bezier(0.6, 0, 0.5, 0.3);
+  }
+  #amber-round {
+    background: rgba(255, 191, 0, 0.3);
+    left: 56%;
+    animation-timing-function: ease-out;
+  }
+   #black-round {
+    background: rgba(0, 0, 0, 0.3);
+    left: 99%;
+    animation-timing-function: ease-out;
+  }
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    25% {
+      top: 100vh;
+    }
+    50% {
+      right:10px;
+    }
+    100% {
+      top: 0vh;
+    }
+  }
+
+    @keyframes bounceb {
+    0% {
+      bottom: 0;
+    }
+
+    25% {
+      bottom: 100vh;
+    }
+    50% {
+      left:10px;
+    }
+    100% {
+      bottom: 0vh;
+    }
   }
   
   /*Media queries*/
